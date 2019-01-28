@@ -1,3 +1,20 @@
-set number
-syntax on
-set title
+" Preliminary
+set nocompatible " only vim!
+syntax enable " enable syntax processing
+filetype on
+filetype indent on
+filetype plugin on
+
+" Tabs and Spaces
+set tabstop=4 " # of visual spaces per TAB
+set softtabstop=4 " # of spaces in TAB when editing
+set shiftwidth=4
+set expandtab " TABs are spaces
+
+" User Interface
+set number " show line numbers
+set showcmd " show command in bottom bar
+set cursorline " highlight current line
+
+
+
