@@ -4,3 +4,4 @@ brew:
 	-@brew bundle --file=$(CURDIR)/brew/Brewfile --verbose
 vim:
 	@ln -fsv $(CURDIR)/vim/vimrc ~/.vim
+	@vim +PlugInstall +qall
