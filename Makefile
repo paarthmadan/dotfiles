@@ -7,4 +7,4 @@ vim:
 	@vim +PlugInstall +qall
 zsh:
 	@sh $(CURDIR)/zsh/zsh.sh
-	@ln -fsv $(CURDIR)/zsh/.zshrc ~
+	@ln -fsv $(CURDIR)/zsh/zshrc ~/.zshrc
