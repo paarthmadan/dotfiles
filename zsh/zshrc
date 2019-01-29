@@ -4,3 +4,5 @@ ZSH_THEME="powerlevel9k/powerlevel9k"
 plugins=(git z)
 source $ZSH/oh-my-zsh.sh
 DEFAULT_USER="paarthmadan"
+
+[ -f /opt/dev/dev.sh ] && source /opt/dev/dev.sh
