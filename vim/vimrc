@@ -11,9 +11,9 @@ filetype indent on
 filetype plugin on
 
 " Tabs and Spaces
-set tabstop=4 " # of visual spaces per TAB
-set softtabstop=4 " # of spaces in TAB when editing
-set shiftwidth=4
+set tabstop=2 " # of visual spaces per TAB
+set softtabstop=2 " # of spaces in TAB when editing
+set shiftwidth=2
 set expandtab " TABs are spaces
 
 " User Interface
