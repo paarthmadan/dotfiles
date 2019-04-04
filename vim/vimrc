@@ -43,4 +43,5 @@ call plug#begin('~/.vim/plugged')
 Plug 'mattn/emmet-vim'
 Plug 'https://github.com/vim-ruby/vim-ruby'
 Plug 'pangloss/vim-javascript'
+Plug 'rust-lang/rust.vim'
 call plug#end()
