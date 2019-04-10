@@ -1,8 +1,3 @@
-" The Power of Habit
-nnoremap d$ <NOP>
-nnoremap y$ <NOP>
-nnoremap c$ <NOP>
-
 " Preliminary
 set nocompatible " only vim!
 syntax enable " enable syntax processing
