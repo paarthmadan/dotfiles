@@ -4,5 +4,8 @@ ZSH_THEME="powerlevel9k/powerlevel9k"
 plugins=(git z)
 source $ZSH/oh-my-zsh.sh
 DEFAULT_USER="paarthmadan"
+POWERLEVEL9K_SHORTEN_DIR_LENGTH=5
+POWERLEVEL9K_SHORTEN_DELIMITER=""
+POWERLEVEL9K_SHORTEN_STRATEGY="truncate_from_right"
 
 [ -f /opt/dev/dev.sh ] && source /opt/dev/dev.sh
