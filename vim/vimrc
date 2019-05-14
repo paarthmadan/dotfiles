@@ -1,4 +1,5 @@
 " Preliminary
+
 set nocompatible " only vim!
 syntax enable " enable syntax processing
 filetype on
@@ -10,6 +11,9 @@ set tabstop=2 " # of visual spaces per TAB
 set softtabstop=2 " # of spaces in TAB when editing
 set shiftwidth=2
 set expandtab " TABs are spaces
+set backspace=indent,eol,start
+
+autocmd FileType c setlocal ts=4 sw=4 expandtab
 
 " User Interface
 set number " show line numbers
@@ -40,4 +44,28 @@ Plug 'https://github.com/vim-ruby/vim-ruby'
 Plug 'pangloss/vim-javascript'
 Plug 'rust-lang/rust.vim'
 Plug 'leafgarland/typescript-vim'
+Plug 'w0rp/ale'
 call plug#end()
+
+" Plugin Settings
+
+" ALE
+let g:ale_sign_error='● '                                  " Use an solid circle symbol for errors in the sign column
+let g:ale_sign_info='‣ '                                   " Use a solid little arrow for 'info' in the sign column
+let g:ale_sign_warning='○ '                                " Use a hollow circle symbol for warnings in the sign column
+let g:ale_sign_column_always=1                             " Show the sign column even if there are no linter notes
+let g:ale_lint_on_text_changed=1                           " Don't run the linter whenever the text of a file changes: fights with Deoplete
+let g:ale_lint_on_enter=1                                  " Run the linter whenever a file is opened
+let g:ale_lint_on_save=1                                   " Run the linter whenever a file is saved
+
+" It may be nice to highlight the actual error here too - drop the 'sign' part
+highlight ALEErrorSign        ctermfg=1
+highlight ALEWarningSign      ctermfg=3
+highlight ALEInfoSign         ctermfg=4
+highlight ALEStyleErrorSign   ctermfg=3
+highlight ALEStyleWarningSign ctermfg=3
+let g:ale_fixers={
+\   'ruby': ['rubocop'],
+\   'javascript': ['eslint', 'prettier'],
+\   'typescript': ['tslint', 'prettier'],
+\}

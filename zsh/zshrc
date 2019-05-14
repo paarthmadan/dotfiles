@@ -7,5 +7,6 @@ DEFAULT_USER="paarthmadan"
 POWERLEVEL9K_SHORTEN_DIR_LENGTH=5
 POWERLEVEL9K_SHORTEN_DELIMITER=""
 POWERLEVEL9K_SHORTEN_STRATEGY="truncate_from_right"
+stty erase '^?'
 
 [ -f /opt/dev/dev.sh ] && source /opt/dev/dev.sh
