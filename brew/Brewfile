@@ -9,8 +9,11 @@ brew 'bat'
 brew 'tree'
 brew 'git'
 brew 'grep'
+brew 'ripgrep'
 brew 'zsh'
 brew 'vim', args: ['with-override-system-vi']
+brew 'tmux'
+brew 'reattach-to-user-namespace'
 
 # Development
 brew 'node'
