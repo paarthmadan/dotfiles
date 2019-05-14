@@ -11,6 +11,8 @@ set softtabstop=2 " # of spaces in TAB when editing
 set shiftwidth=2
 set expandtab " TABs are spaces
 
+autocmd FileType c setlocal ts=4 sw=4 expandtab
+
 " User Interface
 set number " show line numbers
 set showcmd " show command in bottom bar
@@ -40,4 +42,5 @@ Plug 'https://github.com/vim-ruby/vim-ruby'
 Plug 'pangloss/vim-javascript'
 Plug 'rust-lang/rust.vim'
 Plug 'leafgarland/typescript-vim'
+Plug 'w0rp/ale'
 call plug#end()
