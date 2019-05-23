@@ -28,10 +28,6 @@ let g:netrw_liststyle = 3
 let g:netrw_browse_split = 4
 let g:netrw_altv = 1
 let g:netrw_winsize = 25
-augroup ProjectDrawer
-  autocmd!
-  autocmd VimEnter * :Vexplore
-augroup END
 
 " Install VimPlug
 if empty(glob('~/.vim/autoload/plug.vim'))
@@ -73,3 +69,6 @@ let g:ale_fixers={
 \   'javascript': ['eslint', 'prettier'],
 \   'typescript': ['tslint', 'prettier'],
 \}
+
+" FZF Settings
+noremap <silent> <Space>f :Files<cr>
