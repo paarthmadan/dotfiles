@@ -1,4 +1,4 @@
-.PHONY: brew vim zsh
+.PHONY: brew vim zsh tmux
 brew:
 	@sh $(CURDIR)/brew/brew.sh
 	-@brew bundle --file=$(CURDIR)/brew/Brewfile --verbose
@@ -8,3 +8,5 @@ vim:
 zsh:
 	@sh $(CURDIR)/zsh/zsh.sh
 	@ln -fsv $(CURDIR)/zsh/zshrc ~/.zshrc
+tmux:
+	@ln -fsv $(CURDIR)/tmux/tmux.conf ~/.tmux.conf
