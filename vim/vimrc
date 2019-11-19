@@ -13,9 +13,8 @@ set shiftwidth=2
 set expandtab " TABs are spaces
 set backspace=indent,eol,start
 
-autocmd FileType c setlocal ts=4 sw=4 expandtab
-
-autocmd FileType c setlocal ts=4 sw=4 expandtab
+autocmd FileType c setlocal ts=4 sw=4 sts=4 expandtab
+autocmd FileType java setlocal ts=4 sw=4 sts=4 expandtab
 
 " User Interface
 set number " show line numbers
@@ -68,7 +67,11 @@ let g:ale_fixers={
 \   'ruby': ['rubocop'],
 \   'javascript': ['eslint', 'prettier'],
 \   'typescript': ['tslint', 'prettier'],
+\   'rust': ['rustfmt'],
 \}
 
 " FZF Settings
 noremap <silent> <Space>f :Files<cr>
+
+" Remaps
+inoremap jk <Esc>

@@ -1,14 +1,13 @@
 CURRENT_DIRECTORY=`dirname $(readlink ~/.zshrc)`
 export ZSH="/Users/paarthmadan/.oh-my-zsh"
-ZSH_THEME="powerlevel9k/powerlevel9k"
 plugins=(git z)
 source $ZSH/oh-my-zsh.sh
 DEFAULT_USER="paarthmadan"
-POWERLEVEL9K_SHORTEN_DIR_LENGTH=5
-POWERLEVEL9K_SHORTEN_DELIMITER=""
-POWERLEVEL9K_SHORTEN_STRATEGY="truncate_from_right"
 stty erase '^?'
 
-[ -f /opt/dev/dev.sh ] && source /opt/dev/dev.sh
+autoload -U promptinit; promptinit
+prompt pure
+PROMPT='%(?.%F{green}.%F{red})❯%f '
 
+[ -f /opt/dev/dev.sh ] && source /opt/dev/dev.sh
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
