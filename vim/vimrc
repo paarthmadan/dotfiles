@@ -16,6 +16,9 @@ set backspace=indent,eol,start
 autocmd FileType c setlocal ts=4 sw=4 sts=4 expandtab
 autocmd FileType java setlocal ts=4 sw=4 sts=4 expandtab
 
+" Searching
+set smartcase
+
 " User Interface
 set number " show line numbers
 set showcmd " show command in bottom bar
@@ -75,3 +78,6 @@ noremap <silent> <Space>f :Files<cr>
 
 " Remaps
 inoremap jk <Esc>
+
+set grepprg=rg\ --smart-case\ --vimgrep\ $*
+set grepformat=%f:%l:%c:%m
