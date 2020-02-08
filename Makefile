@@ -1,4 +1,4 @@
-.PHONY: brew vim zsh tmux
+.PHONY: brew vim zsh tmux git
 brew:
 	@sh $(CURDIR)/brew/brew.sh
 	-@brew bundle --file=$(CURDIR)/brew/Brewfile --verbose
@@ -11,3 +11,6 @@ zsh:
 	@source ~/.zshrc
 tmux:
 	@ln -fsv $(CURDIR)/tmux/tmux.conf ~/.tmux.conf
+git:
+	@ln -fsv $(CURDIR)/git/gitignore ~/.gitignore_global
+	@git config --global core.excludesfile '~/.gitignore_global'
