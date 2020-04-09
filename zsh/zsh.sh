@@ -12,5 +12,3 @@ git -C ~/.oh-my-zsh/custom/plugins clone https://github.com/zsh-users/zsh-autosu
 ln -s "$PWD/theme/pure.zsh" /usr/local/share/zsh/site-functions/prompt_pure_setup
 ln -s "$PWD/theme/async.zsh" /usr/local/share/zsh/site-functions/async
 npm install -g pure-prompt
-
-cp $SCRIPTPATH/zsh/theme/"com.googlecode.iterm2.plist" ~/Library/Preferences/com.googlecode.iterm2.plist
