@@ -17,6 +17,7 @@ brew 'tmux'
 brew 'reattach-to-user-namespace'
 brew 'fzf'
 brew 'tldr'
+brew 'hugo'
 
 # Development
 brew 'node'
