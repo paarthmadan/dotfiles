@@ -1,6 +1,7 @@
 cask_args appdir: '/Applications'
 
 tap 'homebrew/cask'
+tap 'homebrew/cask-drivers'
 tap 'homebrew/cask-fonts'
 tap 'homebrew/cask-versions'
 
@@ -11,22 +12,26 @@ brew 'git'
 brew 'grep'
 brew 'ripgrep'
 brew 'zsh'
-brew 'vim', args: ['with-override-system-vi']
+brew 'vim'
 brew 'tmux'
 brew 'reattach-to-user-namespace'
 brew 'fzf'
+brew 'tldr'
 
 # Development
 brew 'node'
 brew 'python'
 brew 'python3'
+brew 'rustup'
 
 # Applications
-cask 'iterm2'
+cask 'alacritty'
 cask 'flux'
 cask 'google-chrome'
+cask 'brave-browser'
 cask 'spotify'
 cask 'slack'
 cask 'docker'
 cask 'notion'
 cask 'ngrok'
+cask 'logitech-options'
