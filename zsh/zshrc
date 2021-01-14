@@ -1,5 +1,6 @@
 CURRENT_DIRECTORY=`dirname $(readlink ~/.zshrc)`
 export ZSH="/Users/paarthmadan/.oh-my-zsh"
+
 plugins=(git z)
 source $ZSH/oh-my-zsh.sh
 DEFAULT_USER="paarthmadan"
@@ -11,3 +12,4 @@ PROMPT='%(?.%F{green}.%F{red})❯%f '
 
 [ -f /opt/dev/dev.sh ] && source /opt/dev/dev.sh
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+if [ -e /Users/paarthmadan/.nix-profile/etc/profile.d/nix.sh ]; then . /Users/paarthmadan/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
