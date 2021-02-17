@@ -18,12 +18,17 @@ brew 'reattach-to-user-namespace'
 brew 'fzf'
 brew 'tldr'
 brew 'hugo'
+brew 'ffmpeg'
 
 # Development
 brew 'node'
 brew 'python'
 brew 'python3'
 brew 'rustup'
+brew 'mysql'
+brew 'go'
+brew 'yarn'
+brew 'rustup-init'
 
 # Applications
 cask 'alacritty'

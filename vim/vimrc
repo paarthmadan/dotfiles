@@ -50,6 +50,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'yuezk/vim-js'
 Plug 'maxmellon/vim-jsx-pretty'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+Plug 'lervag/vimtex'
 call plug#end()
 
 " Plugin Settings
