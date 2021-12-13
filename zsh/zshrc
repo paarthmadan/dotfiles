@@ -8,14 +8,9 @@ source $ZSH/oh-my-zsh.sh
 DEFAULT_USER="paarthmadan"
 stty erase '^?'
 
+fpath+=$HOME/.zsh/pure
+
 autoload -U promptinit; promptinit
 prompt pure
+
 PROMPT='%(?.%F{green}.%F{red})❯%f '
-
-[ -f /opt/dev/dev.sh ] && source /opt/dev/dev.sh
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-if [ -e /Users/paarthmadan/.nix-profile/etc/profile.d/nix.sh ]; then . /Users/paarthmadan/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
-
-[[ -f /opt/dev/sh/chruby/chruby.sh ]] && type chruby >/dev/null 2>&1 || chruby () { source /opt/dev/sh/chruby/chruby.sh; chruby "$@"; }
-
-[[ -x /usr/local/bin/brew ]] && eval $(/usr/local/bin/brew shellenv)

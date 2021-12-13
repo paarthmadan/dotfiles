@@ -10,8 +10,9 @@ vim:
 	@vim +PlugInstall +qall
 
 zsh:
-	@sh $(CURDIR)/zsh/zsh.sh
+	@zsh $(CURDIR)/zsh/zsh.sh
 	@ln -fsv $(CURDIR)/zsh/zshrc ~/.zshrc
+	@git clone https://github.com/sindresorhus/pure.git $$HOME/.zsh/pure
 	@source ~/.zshrc
 
 tmux:
